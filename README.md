@@ -30,7 +30,7 @@ This project is designed to be simple with just two key files: agent.rb and an e
 Clone this repository to try it out:
 ```bash
 git clone https://github.com/kurioscreative/how_to_build_an_agent_in_ruby.git
-cd ruby-code-editing-agent
+cd how_to_build_an_agent_in_ruby
 ```
 
 Install the only dependency (anthropic gem):
@@ -52,7 +52,7 @@ chmod +x agent_cli
 Run the agent:
 
 ```
-ruby interactive_cli.rb
+ruby agent.rb
 ```
 
 Or, if you made the CLI executable:
@@ -73,7 +73,7 @@ Claude: I'll check what files are in the current directory.
 tool: list_files({})
 
 Claude: I found the following files and directories in the current directory:
-- interactive_cli.rb
+- agent_cli
 - Gemfile
 - Gemfile.lock
 - README.md
@@ -119,7 +119,7 @@ The agent works through a simple but powerful mechanism:
 ## Project Structure
 
 ```
-ruby-code-editing-agent/
+how_to_build_an_agent_in_ruby/
 ├── agent.rb   # Main application file
 ├── agent_cli   # CLI executable
 ├── Gemfile              # Dependencies
